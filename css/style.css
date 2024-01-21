@@ -147,10 +147,24 @@ img {
 /** --------------HERO-------------- */
 
 .hero {
- padding: 188px 0;
- background-color: #2E2F42;
+ /* padding: 188px 0; */
+ /* background-color: #2E2F42; */
+ 
 }
 
+.hero-container {
+ max-width: 1470px;
+  padding: 188px 0;
+  background-color: #2E2F42;
+  background-image: linear-gradient(
+   rgba(46, 47, 66, 0.70),
+   rgba(46, 47, 66, 0.70)
+   ), 
+   url(../people-office\ 1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .hero-title {
  color: var(--WHITE, #FFF);
