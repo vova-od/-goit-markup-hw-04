@@ -238,9 +238,12 @@ img {
  width: calc((100% - 3 * 24px) / 4);
 }
 
+
 .features-icon-link {
- display: block;
- padding: 24px 100px;
+ display:flex;
+ justify-content: center;
+ /* align-items: center; */
+ padding: 24px 0;
  background-color: #F4F4FD;
  border: 1px solid #8E8F99;
  border-radius: 4px;
@@ -262,6 +265,7 @@ img {
  line-height: 1.5;
  letter-spacing: 0.02em;
 }
+
 
 /*! ------------------------------------- */
 
@@ -316,6 +320,14 @@ img {
  font-weight: 400;
  line-height: 1.5;
  letter-spacing: 0.02em;
+}
+
+.team-soc-list {
+  display: flex;
+}
+
+.team-icon-link {
+  
 }
 
 
