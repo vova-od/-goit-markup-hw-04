@@ -238,6 +238,15 @@ img {
  width: calc((100% - 3 * 24px) / 4);
 }
 
+.features-icon-link {
+ display: block;
+ padding: 24px 100px;
+ background-color: #F4F4FD;
+ border: 1px solid #8E8F99;
+ border-radius: 4px;
+ margin-bottom: 8px;
+}
+
 .features-subtitle {
  color: var(--NAVY-BLUE, #2E2F42);
  font-weight: 500;
