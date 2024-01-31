@@ -61,14 +61,21 @@
   /*-------------heder--------------*/
 
   .header {
-  border-bottom: 1px solid #e7e9fc;
+  /* border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16),
+  0px 1px 6px rgba(46, 47, 66, 0.08); */
   }
 
   .header-container {
   display: flex;
   background-color: #FFF;
-  width: 1440px;
-
+  max-width: 1440px;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16),
+  0px 1px 6px rgba(46, 47, 66, 0.08);
+  
   }
 
   .header-navigation {
@@ -85,6 +92,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
+  margin-left: 156px;
   }
 
   .header-logo-span {
@@ -103,16 +111,28 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
 
   .header-menu-link:hover,
   .header-menu-link:focus,
   .header-menu-link:active {
-  color: #404bbf;
-  border-bottom: 4px solid #404BBF;
+  color: #404BBF;
   }
 
+  .header-menu-link:hover::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    display: block;
+    background-color: #404bbf;
+    border-radius: 2px;
+  }
 
 
   .header-contacts-list {
@@ -120,6 +140,7 @@
   padding: 24px 0;
   gap: 40px;
   margin-left: 332px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   /*! ------------------------------------- */
@@ -133,6 +154,7 @@
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  
   }
 
   .header-address {
@@ -140,31 +162,35 @@
   }
 
   .header-contacts-link:hover,
-  .header-contacts-link:focus,
-  .header-contacts-link:active {
+  .header-contacts-list:focus,
+  .header-contacts-list:active {
   color: #404bbf
   }
+
+  .header-contacts-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
 
 
   /*! ------------------------------------- */
 
   /** --------------HERO-------------- */
 
-
-  .hero-container {
-  max-width: 1440px;
-  width: 1440px;
-  padding: 188px 0;
-  background-color: #2E2F42;
-  background-image: linear-gradient(
-  rgba(46, 47, 66, 0.70),
-  rgba(46, 47, 66, 0.70)
-  ), 
-  url(../people-office\ 1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  .hero {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 188px 0;
+    background-color: #2E2F42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)),
+      url(../people-office\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
   }
+
 
   .hero-title {
   color: #FFF;
@@ -198,6 +224,7 @@
   border: none;
   cursor: pointer;
   margin-top: 48px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .hero-btn:hover,
@@ -206,6 +233,7 @@
   background-color: #404BBF;
   }
 
+
   /*! ------------------------------------- */
 
   /**---------features-----------*/
@@ -213,8 +241,6 @@
   .features {
   padding: 120px 0;
   }
-
-
 
   .visually-hidden {
   position: absolute;
@@ -420,8 +446,7 @@
   .portfolio-item:hover .portfolio-text-wrap {
     transform: translateY(0%);
   }
-
-  .portfolio-text-wrap {
+   .portfolio-text-wrap {
   position: absolute;
   display: flex;
   align-items: center;
