@@ -112,9 +112,9 @@
   padding: 24px 0;
   }
 
-  .header-Studio-link {
-  color: #404bbf;
-  font-size: 16px;
+  .header-studio-link {
+    color: #404bbf;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -133,17 +133,17 @@
 
   }
 
-    .header-Studio-link::after {
-      content: "";
-      width: 100%;
-      position: absolute;
-      left: 0;
-      bottom: -1px;
-      height: 4px;
-      display: block;
-      background-color: #404bbf;
-      border-radius: 2px;
-    }
+.header-studio-link::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  display: block;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
 
 
   .header-contacts-list {
@@ -194,7 +194,7 @@
     background-color: #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70),
         rgba(46, 47, 66, 0.70)),
-      url(../people-office\ 1.jpg);
+      url(../images/people-office\ .jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
