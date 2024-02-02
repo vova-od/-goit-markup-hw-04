@@ -288,7 +288,7 @@
   margin-bottom: 8px;
   }
 
-  
+
 
   .features-subtitle {
   color: var(--NAVY-BLUE, #2E2F42);
@@ -375,19 +375,16 @@
   align-items: center;
   }
 
+
   .team-soc-item {
     width: 40px;
     height: 40px;
-    
   }
 
-  .team-soc-list .team-icon-link  {
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  }
 
   .team-icon-link:hover,
   .team-icon-link:focus {
-  background-color: #31D0AA;
+  background-color: #404bbf;
   }
 
   .team-icon-link {
