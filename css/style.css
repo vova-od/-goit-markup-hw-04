@@ -194,7 +194,7 @@
     background-color: #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70),
         rgba(46, 47, 66, 0.70)),
-      url(../images/people-office\ .jpg);
+      url(../images/people.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -287,6 +287,8 @@
   border-radius: 4px;
   margin-bottom: 8px;
   }
+
+  
 
   .features-subtitle {
   color: var(--NAVY-BLUE, #2E2F42);
