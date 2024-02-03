@@ -431,6 +431,8 @@
     background: #FFF;
     width: calc((100% - 48px) / 3);
     position: relative;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(0%);
   }
   
   
@@ -515,7 +517,7 @@
   }
 
   .footer-logo {
-  color: var(--IRIS, #4D5AE5);
+  color: #4D5AE5;
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -528,6 +530,7 @@
 
   .footer-logo-span {
   color: #F4F4FD;
+  
   }
 
   .footer-item-text {
@@ -584,10 +587,6 @@
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   }
 
-  .footer-icon {
-    width: 24;
-    height: 24;
-  }
 
 
 
