@@ -396,9 +396,6 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  
-
-
   /*! ------------------------------------- */
 
   /* ---------------portfolio--------------- */
@@ -503,14 +500,14 @@
 
   /* -------------footer----------------- */
 
-
+.footer {
+  background-color: #2E2F42;
+  padding: 100px 0;
+}
 
   .footer-container {
   align-items: baseline;
   display: flex; 
-  width: 1440px;
-  height: 312px;
-  background-color: #2E2F42;
   }
 
 
@@ -544,14 +541,6 @@
   max-width: 264px;
   }
 
-
-  .footer-soc-link {
-    display: flex;
-    display: inline-block;
-    margin-top: 100px;
-    margin-left: 120px;
-    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
   .footer-soc-text {
   color: #FFFFFF;
